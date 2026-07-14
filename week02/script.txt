@@ -1,0 +1,32 @@
+W02 Code-along Activity: Add CSS to an HTML File
+Code-along Activity Overview
+For this activity, you will code along with an instructor video that walks you through each step of the activity below. Make sure that you pause the video, or watch sections over if you need to, so that you are able to complete the entire activity.
+
+Your instructor will post a link to the video in Microsoft Teams.
+
+Overview
+Follow the code-along video to create and apply CSS to an HTML file.
+
+Instructions
+Remember that all your work in this class must be completed in your wdd130 folder.
+That is the folder that you should always open in VS Code when working on class activities and assignments.
+
+In the week02 folder, create a new CSS file in the styles subfolder named temple.css
+Open the existing HTML file in the week02 subfolder named temple.html
+Preview the temple.html file in your web browser using Live/Five Server.
+Link the new CSS file in the HTML document using the <link> element.
+Open the temple.css file and add some style so that the page looks like the following screenshot.
+Screenshot of the styled temple page
+Screenshot of the styled temple page
+In the temple.html document, in the footer, replace "Your Name" with your actual name.
+Preview your updated temple.html file in your web browser using Live/Five Server.
+When finished, commit and sync/push your changes to the wdd130 repository to GitHub.
+View your GitHub Pages hosted HTML file in a browser to verify that everything has worked correctly.
+Hint: Your GitHub Pages URL will be
+https://yourusername.github.io/wdd130/week02/temple.html.
+
+Alternative Video Link
+Submission
+Please pause and re-watch any sections of the instructor video necessary until you have completed the entire activity and your page is similar to the instructor's. When you are finished:
+
+Return to Canvas to take the quiz.
