@@ -1,32 +1,148 @@
-W02 Code-along Activity: Add CSS to an HTML File
-Code-along Activity Overview
-For this activity, you will code along with an instructor video that walks you through each step of the activity below. Make sure that you pause the video, or watch sections over if you need to, so that you are able to complete the entire activity.
-
-Your instructor will post a link to the video in Microsoft Teams.
-
+W02 Assignment: Home Page Enhancement
 Overview
-Follow the code-along video to create and apply CSS to an HTML file.
+In this assignment you will apply the learning activity concepts to enhance your home page with additional HTML and CSS.
 
 Instructions
-Remember that all your work in this class must be completed in your wdd130 folder.
-That is the folder that you should always open in VS Code when working on class activities and assignments.
+Learning Activity
+Make sure you have completed the learning activities for this week before working on this assignment.
 
-In the week02 folder, create a new CSS file in the styles subfolder named temple.css
-Open the existing HTML file in the week02 subfolder named temple.html
-Preview the temple.html file in your web browser using Live/Five Server.
-Link the new CSS file in the HTML document using the <link> element.
-Open the temple.css file and add some style so that the page looks like the following screenshot.
-Screenshot of the styled temple page
-Screenshot of the styled temple page
-In the temple.html document, in the footer, replace "Your Name" with your actual name.
-Preview your updated temple.html file in your web browser using Live/Five Server.
-When finished, commit and sync/push your changes to the wdd130 repository to GitHub.
-View your GitHub Pages hosted HTML file in a browser to verify that everything has worked correctly.
-Hint: Your GitHub Pages URL will be
-https://yourusername.github.io/wdd130/week02/temple.html.
+If you have not completed the learning activities yet, you should complete them now before proceeding, or you will be missing important concepts you need to complete this assignment correctly and pass the page audit.
 
-Alternative Video Link
+HTML: Add <head> meta Elements
+Open your course home page, index.html for editing.
+Add two new meta tags to your head section, namely after the title and before the CSS external file link element. These will be the meta description and the meta author.
+<meta name="description" content="Describe your home page here using keywords like your name, the course, the purpose of the page.">
+<meta name="author" content="Your name">
+HTML: <body>
+In the body section, add an aside element after the existing main element and before the footer.
+In the aside element, add the following child elements and element content:
+h2 – Your state or country.
+img – A picture that can represent your state or country.
+Remember that all images must be optimized.
+This image cannot be more than 125kB in file size.
+
+p – A brief paragraph describing your state or country.
+Check Your Understanding – Example
+...
+</main>
+<aside>
+  <h2>Utah</h2>
+  <img src="images/utah.jpg" alt="Utah landscape">
+  <p>Utah is a state in the western United States. It is bordered by Colorado to the east, Wyoming to the northeast, Idaho to the north, Arizona to the south, and Nevada to the west. It also touches a corner of New Mexico in the southeast. The state is a center of transportation, education, information technology, and research, and a major tourist destination for outdoor recreation. Salt Lake City, the state capital and largest city, is home to the headquarters of The Church of Jesus Christ of Latter-day Saints (LDS Church).</p>
+</aside>
+<footer>
+  ...
+CSS
+Open the styles.css file for editing.
+Add a CSS declaration to the main selector to limit its width for now.
+Check Your Understanding – Example
+main {
+  max-width: 840px;
+}
+Add CSS declarations for the following properties for an aside element selector.
+width
+margin
+border
+padding
+background color
+color
+Check Your Understanding – Example
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+1️⃣ The border color uses the preferred rgb color method in order to take advantage of a subtle, transparent border effect. The RGB value consists of four values: red, green, blue, and alpha. The first three values (0, 0, 0) represent black, and the last value, .2 (20%) represents the alpha or opacity of the color. An alpha value of .2 means that the color is mostly transparent, allowing the background to show through. By using this border color, the border appears very light and barely noticeable, while still providing a subtle visual cue that helps to separate elements on a webpage. Additionally, it can help to add a layer of visual interest to the design without being overly distracting or detracting from the overall layout.
+
+Set the img inside the aside to have a width of 200 pixels and a height of auto.
+This auto setting ensures that we do not change the images aspect ratio.
+Why is that important?
+
+Check Your Understanding
+aside img {
+  width: 200px;
+  height: auto;
+}
+Changing the native aspect ratio of an image will distort or pixelate the image.
+
+By default, the general img CSS selector will apply to your images. Change this for the profile image by adding a main parent selector with a specific style.
+main img {
+  width: 150px;
+  height: auto;
+  ...
+}
+Change the existing paragraph p padding property value to 0 pixels.
+Note that any 0 value does not need to specify the units.
+p { padding: 0;}
+Apply CSS to the <footer> element to 1️⃣add a top margin to separate it from the main element content, 2️⃣add a top border to design additional distinction from the main content, and 3️⃣align any text in the footer to the center of its content box.
+Check Your Understanding
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+Explanation
+margin-top specifies just the top of the element to have a margin of 15 pixels.
+border-top uses a shorthand property list to set the border-width, border-style, and border-color in one declaration versus three.
+text-align sets the text alignment to center.
+
+Test your page locally in your browser often using the Live/Five Server extension in VS Code which renders the page in your default browser as a web page.
+Be sure to Save your work.
+Help
+Video Demonstration: ▶️ Home Page Enhancement – [ 10.00 minutess ]
+
+Test, Fix, and Update
+Commit and Sync your changes to your GitHub Pages enabled wdd130 repository.
+Run this assignment's ✔ Page Audit tool to make sure your page meets the basic requirements.
+Fix any issues based upon the feedback.
+Remember that you will need to commit and sync your changes to your GitHub repository and re-run the Page Audit tool until your page passes all checks after making any updates/changes.
+If you encounter any issues or are not sure how to fix an item listed as incorrect, please reach out for help on Microsoft Teams in the Week 02 Forum channel.
+
 Submission
-Please pause and re-watch any sections of the instructor video necessary until you have completed the entire activity and your page is similar to the instructor's. When you are finished:
+Return to Canvas to submit your wdd130 GitHub Pages home page URL:
+https://yourusername.github.io/wdd130
+❌ Wrong submission: https://github.com/yourusername/wdd130
 
-Return to Canvas to take the quiz.
+❌ Wrong submission: Anything starting with http://127.0.0.1
+
+
+W02 Assignment: Home Page Enhancement
+Due Jul 11 by 6:59pm Points 30 Submitting a website url Attempts 0 Allowed Attempts 3 Available until Jul 18 at 6:59pm
+Instructions
+Follow the directions at: W02 Assignment: Home Page EnhancementLinks to an external site.
+Audit your own work by using the Page Audit tool
+If you make any corrections, remember to commit and sync those changes/additions and run the evaluation tool again.
+Submission
+Submit your home page URL.
+Example of the required URL format:
+
+https://your-username.github.io/wdd130
+Rubric
+W02 Assignment: Home Page Enhancement
+W02 Assignment: Home Page Enhancement
+Criteria	Ratings	Pts
+This criterion is linked to a Learning OutcomePage Audit
+30 pts
+Complete
+The audit report contains no errors ❌ and no issues with the content.
+15 pts
+Partial
+The audit report contains one or more errors ❌ or has content issues.
+0 pts
+GitHub Pages Not Enabled
+GitHub Pages was not enabled the students wdd130 repository.
+0 pts
+Incomplete
+The submitted URL was correct but there was no gradable content.
+0 pts
+Incorrect Repository Name
+The repository is not named "wdd130".
+0 pts
+Incorrect URL
+The submitted URL address was invalid. For example, the student submitted a github.com based address or submitted a localhost address starting with 127.0.0.1
+30 pts
+Total Points: 30
