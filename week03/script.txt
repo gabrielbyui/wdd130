@@ -1,0 +1,111 @@
+W03 Code-along Activity: Home Page Enhancement
+Code-along Activity Overview
+For this activity, you will code along with an instructor video that walks you through each step of the activity below. Make sure that you pause the video, or re-watch sections as needed, to complete the entire activity.
+
+Overview
+Follow the code-along video to update your course home page's layout.
+
+Activity Instructions
+Open your home page, index.html, for editing.
+Add an unordered list <ul> to your home page.
+The list should be located in the main element at the end (before the closing </main> tag).
+Your list must have at least three (3) list items, listing your favorite temples.
+The listed temples must be text links to a temple detail page using the Temple List at churchofjesuschrist.org or Newsroom Temples List or unofficially the Temples of the Church of Jesus Christ of Latter-day Saints
+These links must open up a new browser tab when selected.
+Hints
+The Unordered List element – MDN
+HTML <a> Attribute – W3Schools
+
+Check Your Understanding
+<ul>
+  <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple" target="_blank" rel="noopener">Philadelphia Pennsylvania Temple</a></li>
+  <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple" target="_blank" rel="noopener">Paris France Temple</a></li>
+  <li><a href="https://www.churchofjesuschrist.org/temples/details/berlin-germany-temple" target="_blank" rel="noopener">Berlin Germany Temple</a></li>
+</ul>
+Open your styles.css file for editing.
+At the top of the document, create a CSS rule for the universal selector (wildcard) that contains three declarations:
+Set the margin shorthand property to 0.
+Set the padding shorthand property to 0.
+Set the box-sizing property to border-box.
+Setting the universal selector to have a margin and padding of zero (0) will ensure that all elements on the page will have no margin or padding, regardless of the browser defaults. This will make it easier for you to control the page layout.
+
+When the box-sizing property is set to the non-default value of border-box, this tells the browser to account for any border and padding in the values you specify for an element's width and height. – Box-sizing – MDN
+
+Check Your Understanding
+          
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+Add a CSS comment at the bottom of your stylesheet that creates a comment header for a section called "Class Selectors". You will be putting your class selector rules below this comment.
+Check Your Understanding
+/* Class Selectors */
+Add a class selector to your CSS after the comment. Name it "box".
+Style the box class with basic box model properties for margin, border, padding.
+Set the value of the margin and padding to 1rem, which equals the root font size.
+Also add decorations of background-color and color of your own design.
+Remove any duplication of these properties from the aside CSS rule.
+Check Your Understanding
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+Adjusted aside rule example. (Your aside may have other properties. This is just an example.)
+aside {
+  width: 20em;
+  text-align: center;
+}
+Did you miss the period (.) in your syntax when defining the box class?
+In your HTML, give the aside element a class of box.
+Check Your Understanding
+<aside class="box">
+In your HTML, give the ul element list of temples a class of box.
+Check Your Understanding
+<ul class="box">
+Are you observing and noting the changes by running Live Server or Five Server (localhost) while you make changes and build your page?
+Use CSS to float your profile image to the right. The paragraph should come right after the picture. If your introduction is too short, you may need to add more content to ensure that the layout looks appropriate.
+Floated profile image example
+Float Profile Image Example
+Check Your Understanding
+          
+main img {
+  /* you most likely will have other CSS declarations here */
+  float: right;
+}
+Screenshot of heading overlay
+Heading Overlay Example
+Using CSS absolute positioning, overlay the state/country heading element on the image within the aside element.
+This means that you will need to set the container, aside, to have a position: relative; declaration.
+Check Your Understanding
+These numbers for top and left may not work for your image. This is just an example.
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
+In your HTML nav element, add two (2) more <a> links:
+an external link to your LinkedIn profile if you have one.
+If you do not have one, link to https://linkedin.com.
+an external link to your Facebook page if you have one.
+If you do not have one or would prefer not to share it, link to https://facebook.com.
+Testing
+Be sure to continuously save and test your page locally using the Live Server or Five Server extension in VS Code.
+Review your work using the course's development standards checklist.
+Commit and sync your page to your remote GitHub Pages enabled wdd130 repository.
+Post follow-up questions on Microsoft Teams in the Week 03 Forum channel.
+View your published HTML file in a browser to verify that everything has worked correctly.
+Hint: The published URL will be located at
+https://yourusername.github.io/wdd130.
+
+Alternative Video Link
+In addition to the link that your instructor posted, you are also welcome to watch the following code walkthrough or use its transcript:
+
+▶️ Enhancing the Course Home Page [ 18:45 minutes ]
+Submission
+Please pause and re-watch any sections of the instructor video necessary until you have completed the entire activity and your page is similar to the instructor's. When you are finished:
+
+Return to Canvas to take the quiz.

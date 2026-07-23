@@ -30,7 +30,7 @@ main {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 main img {
@@ -50,7 +50,6 @@ p {
 
 aside {
     width: 350px;
-    background-color: var(--aside-bg);
     position: relative;
 }
 
