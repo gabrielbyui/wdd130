@@ -40,15 +40,18 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin-inline: 1rem;
 }
 
 p {
-    padding: 0;
+    line-height: 1.5;
+    margin: 1rem;
 }
 
 aside {
     width: 350px;
     background-color: var(--aside-bg);
+    position: relative;
 }
 
 aside h2 {
@@ -79,5 +82,58 @@ footer {
     padding: 1rem;
     background-color: var(--aside-bg);
     color: var(--aside-text);
-    position: relative;
+}
+
+.indent {
+    padding-left: 2rem;
+}
+
+/* font family and styles */
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
